@@ -1,0 +1,144 @@
+/*GLOBAL*/
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+.a{
+    background-color: var(--color-primary);
+    color: #0ea5e9;
+}
+
+html{
+font-size: 62.5%;
+}
+/*BODY STYLES*/
+body{
+    font-family: "Vazir-Medium.woff";
+}
+.nav{
+    background-color: var(--color-primary);
+    display: grid;
+    grid-template-rows:auto 1fr;
+    margin: 5rem;
+}
+:root{
+    --color-primary:#e2e8f0;
+    --border-radius: 10px;
+}
+.nav-texts{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr; 
+    background-color:var(--color-primary);
+    gap: 5rem;
+    padding: 2rem;
+              
+}
+@media screen and (min-width: 768px) {
+    .nav-texts{
+        grid-template-columns: 1fr 1fr;
+      }  
+    }
+    @media screen and (min-width: 1024px) {
+        .nav-texts{
+            grid-template-columns: 1fr 1fr 1fr;
+          }  
+        }
+ 
+
+/*TYPOGRAPHY*/
+.nav-header{
+    background-color: var(--color-primary);
+    margin: 1rem;
+    border-radius:var(--border-radius);
+    font-size: large;
+    font-weight: 700;
+}
+.nav-text-head {
+    display: flex;
+    background-color: var(--color-primary);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nav-text-head .nav-heads{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.nav-head .nav-head-1 {
+    border: 0.5px solid #7dd3fc;
+    border-radius:  5px;
+    background-color: #7dd3fc;
+    padding: 5px;
+    
+    
+}
+.nav-items{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    font-size: larger;
+    font-weight: 700;
+    margin: 10px;
+    
+    
+}
+.nav-item.nav-price{
+    grid-column: 1 / -1;
+}
+.nav-app{
+    display: grid;
+    grid-template-columns: 40px 80px 250px;
+    column-gap: 10px;
+    justify-content: space-between;
+    align-items: start;
+}
+.nav-app-item.image {
+    justify-self: right;
+    grid-area: auto;
+    width: 20px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+
+    
+}
+.nav-app-item-1{
+  justify-self: start; 
+  align-self: center;
+
+}
+.nav-app-item-2{
+    justify-self: left;
+    align-self: center;
+}
+button{
+    background-color:#14b8a6;
+    color: #ecfeff;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid #06b6d4;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+    font-size: small;
+    font-style: normal;
+    text-align:left;
+}
+/* FONT */
+@font-face {
+    font-family: "Vazir-bold.woff2";
+    font-weight: normal;
+    font-style: normal;
+    src: url(/assest/fonts/Vazir-Medium.woff) format("woff2");
+  }
+  @font-face {
+    font-family: "Vazir-bold.woff2";
+    font-weight: normal;
+    font-style: normal;
+    src: url(/assest/fonts/Vazir-Medium.woff) format("woff2");
+  }
+
